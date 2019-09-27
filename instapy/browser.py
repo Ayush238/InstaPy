@@ -78,7 +78,7 @@ def set_selenium_local_session(
     Settings.user_agent = user_agent
 
     firefox_options = Firefox_Options()
-
+    firefox_options.binary = r'C:\Program Files\Mozilla Firefox\firefox.exe';
     if headless_browser:
         firefox_options.add_argument("-headless")
 
